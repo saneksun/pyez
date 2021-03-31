@@ -1,2 +1,2 @@
-# pyez
+# Pyez
 Pyez scripts
