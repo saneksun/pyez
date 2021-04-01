@@ -1,5 +1,5 @@
 # Pyez
 Pyez scripts
 
-# get_lecense_information.py
+## get_license_key_information.py
 Getting license keys information
