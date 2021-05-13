@@ -1,7 +1,7 @@
 #!/usr/bin/pyhon3
 #
 #  Juniper output for rpc.get function obtaining:
-#  > show system license keys | display xml rpc
+#  > show system license keys | display json
 #
 
 from jnpr.junos import Device
