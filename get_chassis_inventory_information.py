@@ -13,7 +13,7 @@ def sys_hardware(host,inv):
    dev = Device(host=host, user=username, password=password, normalize=True)
    dev.open()
    hostname=str(dev.facts['hostname'])
-   print('\n'+hostname)
+   print('Connecting to {} \n'.format(hostname))
    rpc = dev.rpc.get_chassis_inventory()
    rpc_xml = etree.tostring(rpc, pretty_print=True, encoding='unicode')
    dev.close()
@@ -61,5 +61,4 @@ with open('network_inventory.csv', 'w') as csvfile:
     writer.writerow([datetime.now().isoformat(timespec='minutes')])
     writer.writerow(['Hostname', 'Chassis type','Model', 'Name', 'Serial number'])
     for line in inv:
-        print(line)
         writer.writerow([line])
